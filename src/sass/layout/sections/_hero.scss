@@ -1,13 +1,17 @@
 .hero {
-    border: 2px solid $white;
+
+    &__mobile {
+
+        border: 4px double $light;
+    }
 
     &__desktop {
+        border: 4px double $light;
         display: none;
         @include container('lg');
     }
 
     @include breakpoint ('screen-sm') {
-        border: none;
 
         &__mobile {
             display: none;

@@ -1,0 +1,37 @@
+.video {
+    @include container('full');
+    padding: 2rem 1rem;
+    border-top: 4px double $light;
+    border-bottom: 4px double $light;
+    background-color: $black;
+
+    &__frames {
+        @include breakpoint ('screen-sm') {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    h2 {
+        @include breakpoint ('screen-sm') {
+            text-align: center;
+        }
+
+    }
+
+
+
+
+    iframe {
+        width: 100%;
+        max-width: 580px;
+        margin: .5rem 0;
+
+        @include breakpoint ('screen-sm') {
+            max-width: 380px;
+            margin: 0 1rem;
+        }
+    }
+}
