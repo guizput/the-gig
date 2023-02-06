@@ -6,7 +6,8 @@
   "author": "guigui",
   "scripts": {
     "build:sass": "sass  --no-source-map src/sass:public/css",
-    "build:babel": "./node_modules/.bin/babel src/js --out-dir public/js",
+    "build:babel": "./node_modules/.bin/babel src/js --out-dir public/js --presets=@babel/preset-env",
+    "bundle:js": "browserify public/js/app.js -o public/js/app.js",
     "copy:html": "html-includes --src src --dest public",
     "copy:js": "copyfiles -u 2 src/js/**/*.js public/js",
     "copy:assets": "copyfiles -u 1 assets/* public/assets",
@@ -20,7 +21,7 @@
     "build": "npm-run-all copy:* build:* postbuild",
     "minify:css": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
     "minify:js": "uglifyjs public/js/app.js --compress --mangle",
-    "postbuild": "npm-run-all minify:*"
+    "postbuild": "npm-run-all minify:* bundle:js"
   },
   "dependencies": {
     "@babel/cli": "^7.20.7",
@@ -28,6 +29,7 @@
     "@babel/preset-env": "^7.20.2",
     "autoprefixer": "^10.4.2",
     "browser-sync": "^2.27.7",
+    "browserify": "^17.0.0",
     "copyfiles": "^2.4.1",
     "cssnano": "^5.0.17",
     "html-includes": "^5.0.0",
