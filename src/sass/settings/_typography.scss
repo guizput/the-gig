@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@400;500;700&display=swap');
+
+body {
+  color: $white;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  line-height: normal;
+}
+
+h1 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.8em;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin: 2rem 0;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+
+}
+
+p {
+  margin: 2rem 0;
+}
+
+small {
+  font-size: .8rem;
+}
+
+a {
+  text-decoration: none;
+}

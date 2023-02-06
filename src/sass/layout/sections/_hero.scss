@@ -1,0 +1,20 @@
+.hero {
+    border: 2px solid $white;
+
+    &__desktop {
+        display: none;
+        @include container('lg');
+    }
+
+    @include breakpoint ('screen-sm') {
+        border: none;
+
+        &__mobile {
+            display: none;
+        }
+
+        &__desktop {
+            display: block;
+        }
+    }
+}

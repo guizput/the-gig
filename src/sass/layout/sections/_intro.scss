@@ -1,0 +1,17 @@
+.intro {
+    padding: 2rem 1rem;
+    @include container('sm');
+
+    @include breakpoint ('screen-sm') {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__copy,
+        &__player {
+            width: 48%;
+        }
+    }
+
+
+}

@@ -1,0 +1,46 @@
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: $base-radius;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .2s;
+
+    &--primary {
+        background-color: $light-blue;
+        color: $white;
+
+        &:hover {
+            background-color: darken($light-blue, 5%);
+        }
+    }
+
+    &--secondary {
+        background-color: $light;
+        color: $medium;
+
+        &:hover {
+            background-color: darken($light, 5%);
+        }
+    }
+
+    &--more {
+        background-color: transparent;
+        color: $light-blue;
+        position: relative;
+
+        &::after {
+            content: '→';
+            display: inline;
+            position: relative;
+            top: -2px;
+            left: 2px;
+        }
+
+        &:hover {
+            color: darken($light-blue, 5%);
+        }
+    }
+
+}
