@@ -9,21 +9,13 @@
         align-items: center;
     }
 
-    &__subtitle {
-        position: relative;
-        left: 1rem;
-        top: -1rem;
-
-        @include breakpoint ('screen-sm') {
-            position: absolute;
-            top: 3.7rem;
-            left: 2rem;
-        }
+    img {
+        width: 75px;
     }
 
     &__toggle {
         position: absolute;
-        top: 2rem;
+        top: 1.5rem;
         right: 1rem;
         background-color: transparent;
         border: none;
@@ -56,7 +48,7 @@
 
     &__links {
         padding: 0;
-        margin: 0;
+        margin: 1rem 0 0 0;
         list-style: none;
         text-align: center;
         max-height: 0;
@@ -64,6 +56,7 @@
         overflow: hidden;
 
         @include breakpoint ('screen-sm') {
+            margin: 0;
             display: flex;
             justify-content: end;
             max-height: 100%;
@@ -74,14 +67,15 @@
         }
 
         li {
+            font-family: 'Rock Salt', sans-serif;
             font-size: 1.2rem;
             font-weight: 500;
             padding: 1rem;
-            border-top: 1px dashed $medium;
+            border-top: 1px solid $medium;
 
-            &:first-child {
-                border: none;
-            }
+            // &:first-child {
+            //     border: none;
+            // }
 
             @include breakpoint ('screen-sm') {
                 border: none;

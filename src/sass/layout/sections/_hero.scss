@@ -6,9 +6,10 @@
     }
 
     &__desktop {
-        border: 4px double $light;
+        border-top: 4px double $light;
+        // border-bottom: 4px double $light;
         display: none;
-        @include container('lg');
+        // @include container('lg');
     }
 
     @include breakpoint ('screen-sm') {

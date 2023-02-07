@@ -1,6 +1,6 @@
 {
-  "name": "project",
-  "version": "1.0.0",
+  "name": "the-gig",
+  "version": "1.1.0",
   "description": "SASS compile|autoprefix|minimize and live-reload dev server using Browsersync for static HTML",
   "main": "public/index.html",
   "author": "guigui",
