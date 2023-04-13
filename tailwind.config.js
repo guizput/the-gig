@@ -3,7 +3,13 @@ module.exports = {
     "./index.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        RockSalt: ['Rock Salt', 'sans-serif'],
+        Pangolin: ['Pangolin', 'sans-serif'],
+        Prisma: ['Prisma', 'Rock Salt', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
